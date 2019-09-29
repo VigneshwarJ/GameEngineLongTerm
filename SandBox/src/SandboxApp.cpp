@@ -12,9 +12,7 @@ public:
 	}
 };
 
-int main()
+GameEngine::App* GameEngine::CreateApp()
 {
-	Sandbox* sandbox = new Sandbox();
-	sandbox->Run();
-	delete sandbox;
+	return new Sandbox();
 }

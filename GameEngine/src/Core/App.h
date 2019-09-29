@@ -8,5 +8,7 @@ namespace GameEngine {
 		virtual ~App();
 		void Run();
 	};
+	//To be defined in client
+	App* CreateApp();
 }
 
