@@ -1,7 +1,7 @@
 #pragma once
-
+#include "Core.h"
 namespace GameEngine {
-	class _declspec(dllexport) App
+	class GL_API App
 	{
 	public:
 		App();

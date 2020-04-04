@@ -53,6 +53,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>GE_PLATFORM_WIN;GE_BUILD_DLL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -67,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>GE_PLATFORM_WIN;GE_BUILD_DLL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,12 +77,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Core\Log.h" />
     <ClInclude Include="src\Core\App.h" />
     <ClInclude Include="src\Core\Core.h" />
     <ClInclude Include="src\Core\EntryPoint.h" />
     <ClInclude Include="src\GE_Client.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Core\Log.cpp" />
     <ClCompile Include="src\Core\App.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
