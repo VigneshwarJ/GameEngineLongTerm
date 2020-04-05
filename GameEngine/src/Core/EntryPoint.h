@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef GE_PLATFORM_WIN
+#ifdef GE_PLATFORM_WINDOWS
 extern GameEngine::App* GameEngine::CreateApp();
 int main()
 {

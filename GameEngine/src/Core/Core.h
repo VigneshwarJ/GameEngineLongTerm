@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef GE_PLATFORM_WIN
+#ifdef GE_PLATFORM_WINDOWS
 	#ifdef GE_BUILD_DLL
 		#define GL_API _declspec(dllexport)
 	#else
